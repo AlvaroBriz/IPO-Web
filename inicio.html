@@ -26,13 +26,13 @@
 
 	<div id="main" class="container"> 
 
-	    <form name="loginform" id="loginform" method="post" onsubmit="return myFunction()">
+	    <form name="loginform" id="loginform" method="post">
 	        <p class="text">Introduce tus datos</p>
 	        <input type="text" name="username" class="input" placeholder="Nombre de usuario" />
 	        <input type="password" name="password" class="input" placeholder="Contraseña" />
-	        <input type="submit" onclick value="Iniciar sesión" name="submit" class="button-primary" formaction="home.html"/>
+	        <input type="submit" onclick="location.href='home.html';" value="Iniciar sesión" name="submit" class="button-primary"/>
 	        <p class="text">¿No tienes una cuenta?</p>
-	        <input onclick="myFuncion()" type="submit" value="Registrarse" name="submit" class="button-primary" formaction="registro.html"/>
+	        <input onclick="location.href='registro.html';" type="submit" value="Registrarse" name="submit" class="button-primary"/>
 	    </form>
 
 	</div>
