@@ -1,0 +1,108 @@
+<html>
+	<head>
+		<title>Cick&Food</title>
+
+		<link href="main.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Cantata+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
+
+	</head>
+	<body>
+
+		
+		<div class="top">
+		<ul class="menuUL">
+  			 <li><a href="productos.html">Buscar productos</a></li>
+ 			 <li><a href="dispositivos.html">Gestionar Dispositivos</a></li>
+ 			 <li><a href="contacto.html">Contacto</a></li>
+ 			 <li><a href="ayuda.html">Ayuda</a></li>
+ 			 <li><a href="quienes.html">¿Qúiénes somos?</a></li>
+ 			 <div class="top-right">
+ 			 <li><a href="carrito.html">Carrito</a></li>
+ 			 </div>
+	   </ul>
+	   </div>
+
+	<div id="main" class="main_container"> 
+
+		<p class="text">Elige el establecimiento de procedencia del producto</p>
+	        
+	        <input id="establecimiento" class="buscador_establecimientos" placeholder="Busca el establecimiento" onkeyup="buscaEstablecimiento()"/>
+
+	        <ul id="listaSitios" class="listaSitios">
+	        	<li><a href="buscarProductos.html">Mercadona</a></li>
+	        	
+	        	<li><a href="buscarProductos.html">Fruteria Paco, Salamanca</a></li>
+	        	
+	        	<li><a href="buscarProductos.html">Pescadería Pepe, Zamora</a></li>
+	        	
+	        	<li><a href="buscarProductos.html">Carnicería Manolo, Murcia</a></li>
+	        	<li><a href="buscarProductos.html">Carrefour</a></li>
+	        	
+	        	<li><a href="buscarProductos.html">Dia</a></li>
+	        	
+	        	<li><a href="buscarProductos.html">Super market</a></li>
+	        	
+	        	<li><a href="buscarProductos.html">Carnicería Pepe, Almería</a></li>
+	        	<li><a href="buscarProductos.html">Pescadería Antonio, Ávila</a></li>
+	        	
+	        	<li><a href="buscarProductos.html">Fruteria Jacinto, Madrid</a></li>
+	        	
+	        	<li><a href="buscarProductos.html">Supermercado Paquita</a></li>
+	        	
+	        	<li><a href="buscarProductos.html">Frutería Paco, Valladolid</a></li>
+			</ul>
+		
+		<form>
+		<input class="button-primary_main" type="submit" value="Volver" formaction="productos.html">
+		</form>
+	</div>
+	<script>
+
+
+		function buscaEstablecimiento() {
+			
+		    // Declare variables
+		    var input, filter, ul, li, a, i;
+		    input = document.getElementById('establecimiento');
+		    filter = input.value.toUpperCase();
+		    ul = document.getElementById("listaSitios");
+		    li = ul.getElementsByTagName('li');
+
+		    // Loop through all list items, and hide those who don't match the search query
+		    for (i = 0; i < li.length; i++) {
+		        a = li[i].getElementsByTagName("a")[0];
+		        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+		            li[i].style.display = "";
+		        } else {
+		            li[i].style.display = "none";
+		        }
+		    }
+		}
+
+		function buscaProductos() {
+			
+		    // Declare variables
+		    var input, filter, ul, li, a, i;
+		    input = document.getElementById('productos');
+		    filter = input.value.toUpperCase();
+		    ul = document.getElementById("listaProductos");
+		    li = ul.getElementsByTagName('li');
+
+		    // Loop through all list items, and hide those who don't match the search query
+		    for (i = 0; i < li.length; i++) {
+		        a = li[i].getElementsByTagName("a")[0];
+		        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+		            li[i].style.display = "";
+		        } else {
+		            li[i].style.display = "none";
+		        }
+		    }
+		}
+
+	</script>
+
+	</body>
+
+
+</html>

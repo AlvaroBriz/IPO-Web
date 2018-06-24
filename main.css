@@ -1,0 +1,616 @@
+/* */
+
+html { 
+  background: url(imagen2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+/* MENU */
+.top{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.menuUL {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #0D530D;
+}
+
+.active {
+    background-color: red;
+}
+
+.top-right {
+	float: right;
+}
+
+/* */ 
+
+.main_text {
+	font: 400 70px/1.2 'Cantata One', Georgia, serif;
+	float: center;
+	text-align: center;
+	color: #EBEBEB;
+	margin-top:50px;
+	margin-bottom: 0px;
+}
+
+.second_text {
+	font: 100 35px/1.2 'Cantata One', Georgia, serif;
+	float: center;
+	text-align: center;
+	color: #EBEBEB;
+}
+.text {
+	margin: 10px;
+	font: 400 17px/22px 'roboto';
+	float: center;
+
+}
+
+/* MAIN PAGE */
+
+.main_container {
+	height: 100%;
+	margin-top: 70px;
+	padding: 20px;
+	background-color: #EBEBEB;
+}
+
+
+.input_main { 
+	background-color: #fff;
+	cursor: text;
+	border: solid 1px #dedede; 
+	box-sizing: border-box;
+	color: #4c4c4c;
+	font: 400 18px/23px 'roboto';
+	height: 40px;
+    margin:10px;
+	outline: none;
+	padding: 8px 15px;
+	transition: border 0.3s;
+
+}
+
+.button-primary_main {
+	float: center;
+	background-color: #117211;
+	border: solid 1px transparent; 
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	font: 400 18px/23px 'roboto';
+	height: 40px;
+	letter-spacing: 1px;
+	margin:10px;  
+	outline: none;
+	text-align: center;
+	transition: background-color 0.5s;
+	border-radius: 12px;
+
+}
+
+.button-primary_main:hover {
+	background-color: #0D530D;
+
+}
+
+.big_button1 {
+    background-color: #117211; /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 250px;
+    width: 25%;
+    height: 25%;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.big_button1:hover {
+	background-color: #0D530D;
+
+}
+
+.big_button2 {
+    background-color: #117211; /* Green */
+    position:fixed;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 180px;
+    width: 25%;
+    height: 25%;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.big_button2:hover {
+	background-color: #0D530D;
+
+}
+
+.button_productos_1 {
+    background-color: #117211; /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 50px auto auto 250px ;
+    width: 25%;
+    height: 25%;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.button_productos_1:hover {
+	background-color: #0D530D;
+
+}
+.button_productos_2 {
+    background-color: #117211; /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+   	margin: 50px 100px auto 150px ;
+    width: 25%;
+    height: 25%;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.button_productos_2:hover {
+	background-color: #0D530D;
+
+}
+.button_productos_3 {
+    background-color: #117211; /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 20px auto auto 500px;
+    width: 25%;
+    height: 25%;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.button_productos_3:hover {
+	background-color: #0D530D;
+
+}
+
+.carrito_buscar {
+	float: center;
+	background-color: #117211;
+	border: solid 1px transparent; 
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	font: 400 18px/23px 'roboto';
+	height: 40px;
+	letter-spacing: 1px; 
+	outline: none;
+	text-align: center;
+	transition: background-color 0.5s;
+	border-radius: 12px;
+
+
+}
+
+
+
+/*FORM*/
+/* Bordered form */
+.container {
+	margin: auto;  
+	padding: 0;
+}
+
+#loginform {	
+	background-color: #f7f7f7;
+	display: block;
+	height: auto;
+	margin: 0 auto;	
+	outline: solid 10px rgba(0,0,0,0.10);
+	width: 300px;
+	padding: 30px;
+}
+
+.login-username:before { 
+	color: #4c4c4c;	
+	font-size: 20px;
+	margin: 0;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+} 
+ 
+ .login-username label, .login-password label {
+    padding: 10px;
+	display: none;
+	text-indent: -9999px;
+}
+ 
+.login-username .input{ 
+	margin-top: 15px;
+ } 
+
+.input { 
+	background-color: #fff;
+	cursor: text;
+	border: solid 1px #dedede; 
+	box-sizing: border-box;
+	color: #4c4c4c;
+	font: 400 18px/23px 'roboto';
+	height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+	outline: none;
+	padding: 8px 15px;
+	transition: border 0.3s;
+	width:100%;
+}
+
+.input:focus { border: solid 1px #f35b5b; }
+
+
+.button-primary {
+	background-color: #117211;
+	border: solid 1px transparent; 
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	font: 400 18px/23px 'roboto';
+	height: 42px;
+	letter-spacing: 1px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	outline: none;
+	text-align: center;
+	transition: background-color 0.5s;
+	width: 100%;
+}
+
+.button-primary:hover {
+	background-color: #0D530D;
+
+}
+.login-remember { 
+	display: none;
+}
+
+.textarea{
+	background-color: #fff;
+	cursor: text;
+	border: solid 1px #dedede; 
+	box-sizing: border-box;
+	color: #4c4c4c;
+	font: 400 18px/23px 'roboto';
+	height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+	outline: none;
+	padding: 8px 15px;
+	transition: border 0.3s;
+	width:100%;
+}
+
+
+/* LISTS */
+.myUL {
+    margin: 0;
+    padding: 0;
+    display:table-row;
+
+}
+
+/* Style the list items */
+.myUL li {
+	float: left;
+	height: 50px;
+	width:100%;
+	list-style-type: none;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    vertical-align: middle;
+    transition: 0.2s;
+
+}
+.myUL li:nth-child(2n) {
+    margin-bottom: 1em;
+}
+
+.myUL li:hover {
+    background: #ddd;
+}
+
+.listaSitios {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 50%;
+  overflow:hidden; 
+  overflow-y:scroll;
+
+}
+
+.listaSitios li {
+	float: center;
+	width: 50%;
+	margin: 10px 1px 10px 25%;
+
+}
+
+.listaSitios li a {
+	
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+.listaSitios li a:hover:not(.header) {
+  background-color: #117211;
+}
+
+.buscador_establecimientos {
+    background-image: url(lupa.png); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 10px;
+    margin-left: 25%; /* Add some space below the input */
+    width: 30%;
+    float: center;
+}
+
+.listaProductos {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 50%;
+  overflow:hidden; 
+  overflow-y:scroll;
+
+}
+
+.listaProductos li {
+	float: center;
+	width: 50%;
+	margin: 10px 1px 10px 25%;
+	border: 1px solid #ddd;
+	  margin-top: -1px; /* Prevent double borders */
+	  background-color: #f6f6f6;
+	  padding: 12px;
+	  text-decoration: none;
+	  font-size: 18px;
+	  color: black;
+	  display: block;
+
+}
+
+.listaProductos li:checked{
+	background: #117211;
+}
+
+
+#videoElement {
+    width: 500px;
+    height: 375px;
+    background-color: #666;
+}
+
+.container_pedidos_left {
+	margin-left: 100px;
+	float: left;
+	width: 33%;
+	height: 50%;
+	border: 1px solid #ddd;
+
+}
+
+.container_pedidos_right {
+	margin-right:100px;
+	float: right;
+	width: 33%;
+	height: 50%;
+	border: 1px solid #ddd;
+
+}
+
+.text_left {
+	margin: 10px;
+	font: 400 17px/22px 'roboto';
+	float: left;
+
+}
+
+.todo_al_carrito {
+	float: right;
+	background-color: #117211;
+	border: solid 1px transparent; 
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	font: 400 18px/23px 'roboto';
+	height: 30px;
+	letter-spacing: 1px;
+	outline: none;
+	margin: 10px;
+	text-align: center;
+	transition: background-color 0.5s;
+	border-radius: 12px;
+
+}
+
+.todo_al_carrito:hover {
+	background-color: #0D530D;
+
+}
+
+.recientes{
+	list-style:none;
+}
+
+.recientes li{
+	float:left;
+	width: 100%;
+	margin:20px auto 30px auto;
+}
+
+.boton_carrito {
+	float: right;
+	background-color: #117211;
+	border: solid 1px transparent; 
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	font: 400 18px/23px 'roboto';
+	letter-spacing: 1px;
+	outline: none;
+	margin-left: 50px;
+	text-align: center;
+	transition: background-color 0.5s;
+	border-radius: 12px;
+
+}
+
+.boton_carrito:hover {
+	background-color: #0D530D;
+
+}
+
+.container_carrito {
+	margin-left: 50px;
+	float: left;
+}
+
+.listaItems{
+	list-style:none;
+}
+.listaItems li{
+	float:left;
+	width: 60%;
+	margin:10px auto 10px auto;
+}
+
+.boton_dispositivo {
+	float: right;
+	background-color: #117211;
+	border: solid 1px transparent; 
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	font: 400 18px/23px 'roboto';
+	letter-spacing: 1px;
+	outline: none;
+	margin-left: 20px;
+	text-align: center;
+	transition: background-color 0.5s;
+	border-radius: 12px;
+
+}
+
+.boton_dispositivo:hover {
+	background-color: #0D530D;
+
+}
+
+.boton_scan{
+	float: center;
+	background-color: #117211;
+	border: solid 1px transparent; 
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	font: 400 18px/23px 'roboto';
+	letter-spacing: 1px;
+	outline: none;
+	margin-left: 20px;
+	text-align: center;
+	transition: background-color 0.5s;
+	border-radius: 12px;
+
+}
+
+.boton_scan:hover {
+	background-color: #0D530D;
+
+}
+
+.text_scan{
+
+	margin: 10px;
+	font: 400 17px/22px 'roboto';
+	float: center;
+}
+
+.fin_pedido {
+	float: left;
+	background-color: #117211;
+	border: solid 1px transparent; 
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	font: 400 18px/23px 'roboto';
+	letter-spacing: 1px;
+	outline: none;
+	margin-left: 20px;
+	text-align: center;
+	transition: background-color 0.5s;
+	border-radius: 12px;
+	margin-top: 320px;
+
+}
+
+.fin_pedido:hover {
+	background-color: #0D530D;
+
+}
